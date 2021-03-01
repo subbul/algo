@@ -3,6 +3,6 @@ on:
   push:
 jobs:
   steps:
-    - uses: remorses/bump-version@js
+    uses: remorses/bump-version@js
 
 
