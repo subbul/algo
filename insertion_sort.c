@@ -40,5 +40,5 @@ int main(int argc, char const *argv[])
 		printf("%d, ",input_elements[i]);
 		/* code */
 	}
-	printf("\n");
+	printf("\n");//FIXME
 }
