@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+
+name: Deploy DEV - Pull Request to development
+
+on:
+  pull_request:
+    branches:
+    - dev
+    paths-ignore:
+    - 'README.md'
+
+# Environment variables available to all jobs and steps in this workflow
+env:
+  NAMESPACE: development
+  ENV: dev
+  GITHUB_SHA: ${{ github.sha }}
+
+jobs:
+  pull_request_workflow:
+    name: Deploy DEV - Pull Request to development
+    runs-on: ubuntu-18.04
+    steps:
+
+    # Clone the repository
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    # Lint
+    - name: Lint
+      run: |
+        LINT
+    # Unit Test
+    - name: Unit Test
+      run: |
+        UNIT
