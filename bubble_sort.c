@@ -37,7 +37,7 @@ int main(int argc, char const *argv[])
 
 	for (int i = 0; i < sizeof_list; ++i)
 	{
-		printf("%d ",input_list[i]);
+		printf("%d ",input_list[i]);//FIXME
 		/* code */
 	}
 	printf("\n");
