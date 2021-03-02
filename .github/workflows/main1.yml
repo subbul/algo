@@ -1,8 +1,0 @@
-name: Bump version
-on:
-  push:
-jobs:
-  steps:
-    uses: remorses/bump-version@js
-
-

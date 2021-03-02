@@ -1,7 +1,0 @@
-# This is a basic workflow to help you get started with Actions
-
-name: Bump version
-  uses: remorses/bump-version@js
-  with:
-      version_file: ./VERSION
-      prefix: v
